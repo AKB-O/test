@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>乳</title>
+　 　</head>
+    　
+    <body>
+        <h1>おっぱい</h1>
+        <p id = "opi">'おっぱい！'</p>
+        <button id = "t">ちくび</button>
+        <script src="script1.js"></script>
+        <script>
+            var sh;
+            sh = 1;
+            /*function show() {
+                console.log(sh++);
+                var tsp = setTimeout(function(){
+                show();
+            } ,1000)
+                if(sh>4){
+                    clearTimeout(tsp);
+                }
+            }
+            show();
+            var address = {
+                email: "shotaroazabu@gmail.com",
+                greet:function(name){
+                    console.log("こんにちは、" + name + "  from  " + this.email);
+                }
+            };
+            address.score = 50;
+            
+            address.greet("正太郎");
+            
+            var Q = new String("hisamatsu");
+            console.log(Q.length);
+            console.log(Q.replace("h","H"));*/
+            var t = document.getElementById('opi');
+            t.textContent = 'Oppai';
+            t.style.color = 'blue';
+            
+            document.getElementById('t').addEventListener('click',function(){
+                var greet = document.createElement('p'),
+                    text = document.createTextNode('母乳');
+                document.body.appendChild(greet).appendChild(text);
+            });
+            
+        </script>
+    </body>
+</html>
+    
+    
